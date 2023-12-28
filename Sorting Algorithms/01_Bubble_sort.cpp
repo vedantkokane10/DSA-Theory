@@ -6,8 +6,8 @@ int main() {
     int n = 6;
     
     // Bubble Sort
-    for(int i = n - 1; i >= 1; i--) {
-        bool didSwap = 0; // if array already sorted (Best case)
+    for(int i = n - 1; i >= 1; i--) {                                // i >= 1 .. because if n = 1 then, for j = 0 => arr[j] , arr[j+1] not exists therefore array out of bound
+        bool didSwap = 0;                                           // if array already sorted (Best case)
         for(int j = 0; j < i; j++) {
             if(arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
