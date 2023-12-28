@@ -6,7 +6,7 @@ int main() {
     int n = 6;
     
     // Bubble Sort
-    for(int i = n - 1; i >= 1; i--) {
+    for(int i = n - 1; i >= 0; i--) {
         bool didSwap = 0; // if array already sorted (Best case)
         for(int j = 0; j < i; j++) {
             if(arr[j] > arr[j + 1]) {
